@@ -1,0 +1,14 @@
+<% layout('layouts/main') %>
+<h2>Post a Job</h2>
+<form action="/alumni/post-job" method="POST">
+    <label for="title">Job Title</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="requirements">Requirements</label>
+    <textarea id="requirements" name="requirements" required></textarea>
+
+    <button type="submit">Post Job</button>
+</form>

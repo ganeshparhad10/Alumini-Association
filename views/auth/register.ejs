@@ -1,0 +1,23 @@
+<% layout('layouts/main') %>
+<div class="form-container">
+    <h2>Register</h2>
+    <form action="/auth/register" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="role">Role</label>
+        <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="alumni">Alumni</option>
+            <option value="admin">Admin</option>
+        </select>
+        
+        <button type="submit">Register</button>
+    </form>
+</div>

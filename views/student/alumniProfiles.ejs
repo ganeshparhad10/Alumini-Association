@@ -1,0 +1,12 @@
+<% layout('layouts/main') %>
+<h2>Alumni Profiles</h2>
+<div class="profiles-container">
+    <% alumni.forEach(alumnus => { %>
+        <div class="profile">
+            <h3><%= alumnus.user.name %></h3>
+            <p><%= alumnus.bio %></p>
+            <p>Interests: <%= alumnus.interests.join(', ') %></p>
+            <a href="/student/connect/<%= alumnus.user._id %>">Connect</a>
+        </div>
+    <% }) %>
+</div>
